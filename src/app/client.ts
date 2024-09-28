@@ -2,8 +2,8 @@ import { ThirdwebSDK } from '@thirdweb-dev/sdk';
 import { ethers } from 'ethers';
 
 // Import the smart contract address and the chain ID from environment variables
-const contractAddress ="0x8096C7B7B7583C46b7bB823F00d1373140e330d7";
-const chainId ="11155111";
+const contractAddress = process.env.NEXT_PUBLIC_CONTRACT_ADDRESS;
+const chainId = Number(process.env.NEXT_PUBLIC_CHAIN_ID);
 
 // Example ABI (replace with your actual contract's ABI)
 const contractAbi = [
